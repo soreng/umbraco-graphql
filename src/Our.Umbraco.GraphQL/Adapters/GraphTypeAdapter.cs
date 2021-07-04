@@ -66,7 +66,7 @@ namespace Our.Umbraco.GraphQL.Adapters
                         typeof(ObjectGraphType<>).MakeGenericType(unwrappedTypeInfo));
                     _visitor?.Visit((IObjectGraphType)graphType);
                 }
-                catch (Exception ex)
+                catch /*(Exception ex)*/
                 {
                     throw;
                 }
